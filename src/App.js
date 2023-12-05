@@ -194,8 +194,10 @@ function App() {
                       }
                       {currStudent &&
                         <div>
-                          <h3>Name: {currStudent.first_name + ' ' + currStudent.last_name}</h3>
-
+                          <h3>Name: {currStudent.salutation + ' ' + currStudent.first_name + ' ' + currStudent.last_name}</h3>
+                          <h3>Address: {currStudent.street_address + ', ' + currStudent.zip}</h3>
+                          <h3>Phone: {currStudent.phone}</h3>
+                          <h3>Registration Date: {currStudent.registration_date}</h3>
                         </div>
                       }
                     </FormElement>
