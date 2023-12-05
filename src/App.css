@@ -7,7 +7,7 @@
   pointer-events: none;
 }
 
-.App-header {
+.App-header, .app-footer, .app-center {
   background-color: #151950;
   min-height: 100vh;
   display: flex;
@@ -16,4 +16,52 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.button-group button {
+  margin: 2rem;
+  transition: font-size 0.5s;
+}
+
+.button-group button:hover {
+  font-size: large;
+}
+
+.grid-column {
+  background-color: rgb(131, 220, 240);
+  color: white;
+  font-size: large;
+  transition: background-color 0.2s;
+}
+
+.grid-column:hover {
+  background-color: rgb(50, 155, 246);
+}
+
+.grid-container {
+  display: flex;
+  justify-content: center;
+}
+
+.main-grid {
+  width: 100vw;
+  height: 500px;
+}
+
+.app-center {
+  background-color: white;
+  color: #151950;
+}
+
+.create-student {
+  color: white;
+  width: 300px;
+}
+
+.create-student input {
+  margin: 5px;
+}
+
+.create-student button {
+  margin-top: 1rem;
 }
